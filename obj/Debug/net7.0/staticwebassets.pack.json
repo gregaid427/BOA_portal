@@ -73,6 +73,10 @@
       "PackagePath": "staticwebassets\\fonts\\Ubuntu\\Ubuntu-Regular.woff2"
     },
     {
+      "Id": "C:\\Users\\USER\\source\\repos\\BOA_Portal\\wwwroot\\images\\boa_pay.jpg",
+      "PackagePath": "staticwebassets\\images\\boa_pay.jpg"
+    },
+    {
       "Id": "C:\\Users\\USER\\source\\repos\\BOA_Portal\\wwwroot\\images\\dashboard\\circle.png",
       "PackagePath": "staticwebassets\\images\\dashboard\\circle.png"
     },

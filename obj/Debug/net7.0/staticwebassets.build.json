@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NZPGOKebvKM+3+3bTbik192lQ+IszI33nrvYAaMLqNs=",
+  "Hash": "zFwHzX8/9CedNqa7Yvjqq4uHYY7mfui2+1EOGMqn3RU=",
   "Source": "BOA_Portal",
   "BasePath": "_content/BOA_Portal",
   "Mode": "Default",
@@ -321,6 +321,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\Ubuntu\\Ubuntu-Regular.woff2"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\BOA_Portal\\wwwroot\\images\\boa_pay.jpg",
+      "SourceId": "BOA_Portal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\BOA_Portal\\wwwroot\\",
+      "BasePath": "_content/BOA_Portal",
+      "RelativePath": "images/boa_pay.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\boa_pay.jpg"
     },
     {
       "Identity": "C:\\Users\\USER\\source\\repos\\BOA_Portal\\wwwroot\\images\\dashboard\\circle.png",
