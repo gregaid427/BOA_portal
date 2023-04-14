@@ -1,0 +1,159 @@
+﻿@{
+    ViewData["Title"] = "Transactions";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- Content wrapper start -->
+@*<style>
+    .content-wrapper {
+        height: 100vh;
+    }
+</style>*@
+
+<!-- Content wrapper start -->
+
+
+
+
+
+<div class="content-wrapper p-3">
+    <div class="page-header">
+        <h3 class="page-title">
+            <span class="page-title-icon bg-gradient-primary text-white me-2">
+                <i class="mdi mdi-library-books"></i>
+            </span> Transactions
+        </h3>
+        <nav aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">
+                    <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <div class="row">
+        <div class="card py-auto ">
+            <div class="card-body py-auto ">
+                <div class="col-12 d-flex column1">
+
+                    <div class="col-sm-6 col-md-3 row px-2 ">
+                        From <input type="date" class="form-control form-control-sm">
+                    </div>
+                    <div class="col-sm-6 col-md-3  px-2">
+                        To <input type="date" class="form-control form-control-sm">
+                    </div>
+
+                    <div class="col-sm-12 col-md-2  align-items-bottom px-2 pt-1 d-flex text-white h-100 flex-column ">
+
+                        <button class=" w-100 btn btn-block btn-sm btn-gradient-primary mt-3  ">Fetch</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-12 grid-margin">
+            <div class="card">
+                <div class="card-body">
+
+                    <div class="d-flex justify-content-between">
+
+                        <div class="num_rows ">
+
+                            <div class="form-group">
+                                <!--		Show Numbers Of Rows 		-->
+                                <select class=" selectstyle  form-control-sm" name="state" id="maxRows">
+
+
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="50">50</option>
+                                    <option value="70">70</option>
+                                    <option value="100">100</option>
+                                    <option value="5000">Show ALL Rows</option>
+                                </select>
+
+                            </div>
+                        </div>
+
+
+                        <div class="tb_search">
+                            <input type="text" id="search_input_all" onkeyup="FilterkeyWord_all_table()"
+                                   placeholder="Search.." class="form-control-sm selectstyle form-control">
+                        </div>
+                    </div>
+
+
+                    <div class="table-responsive">
+                        <table class="table table-borded " id="table-id">
+
+
+                            <thead>
+                                <tr>
+                                    <th> Transaction ID </th>
+                                    <th> Created By </th>
+                                    <th> Source </th>
+                                    <th> Channel </th>
+                                    <th> Network </th>
+                                    <th> Amount </th>
+                                    <th> Date </th>
+                                    <th> Network </th>
+                                    <th> Network Ref </th>
+                                    <th> Narration </th>
+                                    <th> Status </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>Kuame Parsons</td>
+                                    <td>non.sapien@in.com</td>
+                                    <td>1-962-122-8834</td>
+                                    <td>Aug 2, 2015</td>
+                                    <td>Kuame Parsons</td>
+                                    <td>non.sapien@in.com</td>
+                                    <td>1-962-122-8834</td>
+                                    <td>Aug 2, 2015</td>
+                                    <td>Kuame Parsons</td>
+                                    <td>non.sapien@in.com</td>
+                                    <td>                  <label class="badge badge-info">Active</label></td>
+
+                                </tr>
+
+
+
+                            <tbody>
+                        </table>
+                    </div>
+                    <!--		Start Pagination -->
+                    <div class='pagination-container my-3'>
+                        <nav>
+                            <ul class="pagination">
+                                <!--	Here the JS Function Will Add the Rows -->
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="rows_count">Showing 11 to 20 of 91 entries</div>
+
+                </div> <!-- 		End of Container -->
+
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+  

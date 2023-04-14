@@ -1,0 +1,133 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- Content wrapper start -->
+@*<style>
+    .content-wrapper {
+        height: 100vh;
+    }
+</style>*@
+
+<!-- Content wrapper start -->
+
+
+
+
+
+    <div class="content-wrapper p-3">
+        <div class="page-header">
+            <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2">
+                    <i class="mdi mdi-home"></i>
+                </span> Dashboard
+            </h3>
+            <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-md-3  col-sm-6">
+            <div class=" d-flex gap-1 mb-2 marg">
+                <button class="btn  btn-sm btn-secondary ">Day</button>
+                <button class="btn  btn-sm btn-secondary ">Week</button>
+                <button class="btn  btn-sm btn-secondary ">Month</button>
+                <button class="btn  btn-sm btn-secondary ">Year</button>
+            </div>
+        </div>
+
+        <div class="row marg ">
+            <div class="col-md-3  stretch-card grid-margin">
+                <div class="card bg-gradient-danger card-img-holder ">
+                <div class="card-body text-white">
+                        <img src="~/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                        <h4 class="font-weight-normal mb-3">
+                            Total Trans
+                        </h4>
+                        <h2 class="mb-2">00</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 stretch-card grid-margin">
+                <div class="card bg-gradient-info card-img-holder ">
+                    <div class="card-body text-white">
+                        <img src="~/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                        <h4 class="font-weight-normal mb-3">
+                            Failed Trans
+                        </h4>
+                        <h2 class="mb-2">00</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 stretch-card grid-margin">
+                <div class="card bg-gradient-success card-img-holder  font-weight-bold ">
+                <div class="card-body text-white">
+                        <img src="~/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                        <h4 class="font-weight-normal mb-3">
+                            Success Trans
+                        </h4>
+                        <h2 class="mb-2">00</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 stretch-card grid-margin">
+                <div class="card bg-gradient-warning card-img-holder ">
+                <div class="card-body text-white">
+                        <img src="~/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                        <h4 class="font-weight-normal mb-3">
+                            Total Success Trans
+                        </h4>
+                        <h2 class="mb-2">00</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="d-flex">
+                            <div class="d-flex align-items-center me-4 text-muted font-weight-light">
+                                <i class="mdi mdi-account-outline icon-sm me-2"></i>
+                                <span>Total Trans Network</span>
+                            </div>
+
+                        </div>
+                        <div class="row mt-3">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="d-flex">
+                            <div class="d-flex align-items-center me-4 text-muted font-weight-light">
+                                <i class="mdi mdi-account-outline icon-sm me-2"></i>
+                                <span>Total Trans Network</span>
+                            </div>
+
+                        </div>
+                        <div class="row mt-3">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+  

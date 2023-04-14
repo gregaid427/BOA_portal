@@ -1,0 +1,178 @@
+﻿
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Portal</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="~/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="~/vendors/css/vendor.bundle.base.css">
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="~/css/style.css">
+    <!-- End layout styles -->
+@*    <link rel="shortcut icon" href="~/images/favicon.ico" />
+*@
+    @RenderSection("styles", required: false)
+</head>
+
+<body>
+    <div class="container-scroller">
+
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar green default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper green d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo">
+                 <img src="~/images/logo1.png" alt="logo" />
+                </a>
+                <a class="navbar-brand brand-logo-mini">
+                    <img src="~/images/logo1.mini.png"
+                         alt="logo" />
+                </a>
+            </div>
+            <div class="navbar-menu-wrapper green d-flex align-items-stretch">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="mdi  white mdi-menu"></span>
+                </button>
+
+                <ul class="navbar-nav navbar-nav-right">
+                    <li class="nav-item nav-profile dropdown">
+                       @* <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            <div class="nav-profile-img">
+                                <img src="~/images/faces/face1.jpg" alt="image">
+                            </div>
+
+                        </a>*@
+                        <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+
+                            <a class="dropdown-item" href="#">
+                                <i class="mdi mdi-logout me-2 text-primary"></i> Signout
+                            </a>
+                        </div>
+                    </li>
+
+
+
+
+               
+
+                    <li class="nav-item nav-logout d-none d-lg-block">
+                        <a class="nav-link" href="#">
+                            <i class="mdi white mdi-power"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link"  asp-controller="Home" asp-action="Index">
+                            <span class="menu-title">Dashboard</span>
+                            <i class="mdi mdi-home menu-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                  <a class="nav-link"  asp-controller="Transactions" asp-action="Index">
+                            <span class="menu-title">Transactions</span>
+                            <i class="mdi mdi-library-books menu-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="transactionssummary" asp-action="Index">
+    
+                            <span class="menu-title">Transaction Summary</span>
+                            <i class="mdi mdi-library-books menu-icon"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Sales" asp-action="Index">
+
+                     
+                            <span class="menu-title">Sales</span>
+                            <i class="mdi mdi-tag menu-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="MyAccount" asp-action="Index">
+
+               
+                            <span class="menu-title">My Account</span>
+                            <i class="mdi mdi-file menu-icon"></i>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false"
+                           aria-controls="ui-basic">
+                            <span class="menu-title">Settings</span>
+                            <i class="menu-arrow"></i>
+                            <i class="mdi mdi-settings menu-icon"></i>
+                        </a>
+                        <div class="collapse" id="ui-basic">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item">  <a class="nav-link" asp-controller="ChangePassword" asp-action="Index">Change Password</a></li>
+                                <li class="nav-item">   <a class="nav-link" asp-controller="Users" asp-action="Index">Users</a></li>
+     
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </nav>
+
+<div class="main-panel">
+
+
+@RenderBody()
+
+
+  </div>
+    </div>
+<!-- content-wrapper ends -->
+<!-- partial:partials/_footer.html -->
+<!-- partial -->
+  </div>
+<!-- main-panel ends -->
+
+<!-- page-body-wrapper ends -->
+  
+<!-- container-scroller -->
+<!-- plugins:js -->
+<script src="~/vendors/js/vendor.bundle.base.js"></script>
+<!-- endinject -->
+<!-- Plugin js for this page -->
+<script src="~/vendors/chart.js/Chart.min.js"></script>
+<script src="~/js/jquery.cookie.js" type="text/javascript"></script>
+<!-- End plugin js for this page -->
+<!-- inject:js -->
+<script src="~/js/off-canvas.js"></script>
+<script src="~/js/hoverable-collapse.js"></script>
+<script src="~/js/misc.js"></script>
+<!-- endinject -->
+<!-- Custom js for this page -->
+<script src="~/js/dashboard.js"></script>
+<script src="~/js/todolist.js"></script>
+<!-- End custom js for this page -->
+@RenderSection("scripts", required: false)
+</body>
+
+</html>
