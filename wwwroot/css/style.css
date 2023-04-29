@@ -1857,8 +1857,9 @@ h6, .h6 {
   font-size: 1rem; }
 
 p {
-  margin-top: 0;
-  margin-bottom: 1rem; }
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
 
 abbr[title],
 abbr[data-bs-original-title] {
@@ -2265,6 +2266,8 @@ progress {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
     max-width: 1320px; } }
 
+
+
 .row {
   /* --bs-gutter-x: 40px;
   --bs-gutter-y: 0; */
@@ -2295,9 +2298,9 @@ progress {
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-.5 * var(--bs-gutter-x));
   margin-left: calc(-.5 * var(--bs-gutter-x)); }
-.marg{
-  --bs-gutter-x: 10px !important;
 
+.marg {
+    --bs-gutter-x: 10px !important;
 }
 .green {
     background-color: #048840 !important;
@@ -14497,3 +14500,13 @@ dl {
   flex-grow: 1; }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.selectborder {
+    border: 3px solid #048840 !important;
+    color: aqua;
+    background-color: darkred;
+}
+.nomargintop{
+    margin-top:0 !important ;
+}
